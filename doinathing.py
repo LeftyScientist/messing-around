@@ -18,7 +18,7 @@ while number < 101:
 name = input("Hello! My name is ######, what's yours?: ")
 print(name + 'is a lovely name.')
 
-play = input("Would you like to play a math game? [Y/N]: ")
+play = input("Would you like to play a number game? [Y/N]: ")
 play = str.upper(play)
 
 if play == 'N':
@@ -28,3 +28,15 @@ elif play == 'Y':
 else:
     print(input("Type Y or N into the terminal. "))
 
+import random
+numbers = [1,2,3,4,5,6,7]
+answer = random.choice(numbers)
+
+guess = input("I am thinking of a number between 1 and 7 . . . : ")
+
+guess = int(guess)
+
+if guess == answer:
+    print("You win!")
+else:
+    print("You lose.")
