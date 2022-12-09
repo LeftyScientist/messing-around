@@ -14,4 +14,4 @@ while number < 101:
         print('fiz')
     else:
         print(number)
-    number += 4
+    number += 1
